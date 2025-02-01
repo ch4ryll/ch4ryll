@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jadwal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar .logo span {
+            color: orange;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-left: 40px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar .nav-links a:hover, .navbar .nav-links a.active {
+            color: orange;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .navbar .contact-button {
+            margin-left: auto;
+        }
+        .navbar .contact-button a {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .contact-button a:hover {
+            background-color: orange;
+            color: white;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding-top: 30px;
+        }
+        h2 {
+            color: #666;
+            margin-top: 30px;
+        }
+        p {
+            color: #777;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #777;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .bg-blue {
+            background-color: #9d8548;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .bg-green {
+            background-color: #9d8548;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .bg-orange {
+            background-color: #9d8548;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sheyy <span>Ryll</span></div>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="profil.html">Profile</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="skill.html">Skill</a>
+            <a href="projek.html">Project</a>
+        </div>
+        <div class="contact-button">
+            <a href="kontak.html">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="bg-blue">Biodata Saya</h1>
+        <h2 class="bg-green">Informasi Pribadi</h2>
+        <p>Nama: Cheyril Athiyya Devrilia</p>
+        <p>Alamat: Sumbergempol</p>
+        <p>Tanggal Lahir: 24 December 2007</p>
+        <p>Nomor Telepon:+62 857-0736-8018</p>
+        
+        <h2 class="bg-orange">Pendidikan</h2>
+        <ul>
+            <li>SD</li>
+            <li>SMP</li>
+            <li>SMK</li>
+           
+        </ul>
+
+        <h2 class="bg-blue">Minat dan Hobi</h2>
+        <ul>
+            <li>Menyanyi</li>
+            <li>Membaca buku</li>
+            <li>Mendengarkan musik</li>
+        </ul>
+    </div>
+</body>
+</html>

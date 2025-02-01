@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center; /* Navbar berada di tengah */
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        .navbar .logo span {
+            color: orange;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar .nav-links a:hover, .navbar .nav-links a.active {
+            color: orange;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .navbar .contact-button {
+            margin-left: auto;
+        }
+        .navbar .contact-button a {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .contact-button a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Heading Styling */
+        h1 {
+            color: #8b5a2b;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Gallery Section Styling */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .gallery a {
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sheyy <span>Ryll</span></div>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="profil.html">Profile</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="skill.html">Skill</a>
+            <a href="projek.html">Project</a>
+        </div>
+        <div class="contact-button">
+            <a href="kontak.html">Contact Me</a>
+        </div>
+    </div>
+
+    <h1>Gallery</h1>
+
+    <div class="gallery">
+        <a href="#!"><img src="https://i.pinimg.com/736x/40/e4/1c/40e41c7e98db833ffdc9e9046acc4831.jpg" alt="Gambar 1"></a>
+        <a href="#!"><img src="https://i.pinimg.com/564x/71/ce/24/71ce24ae9d767005ec9dfc43b7b8f5ff.jpg" alt="Gambar 2"></a>
+        <a href="#!"><img src="https://i.pinimg.com/474x/3d/c9/75/3dc9755362101dca37266ad3d50cfaf2.jpg" alt="Gambar 3"></a>
+        <a href="#!"><img src="https://i.pinimg.com/474x/be/49/e4/be49e4ff10904f7232b4337f293ab399.jpg" alt="Gambar 4"></a>
+        <a href="#!"><img src="https://i.pinimg.com/564x/2a/b4/5d/2ab45d9f755a353d62bdd12cd72f0559.jpg" alt="Gambar 5"></a>
+        <a href="#!"><img src="https://i.pinimg.com/564x/f1/44/c2/f144c28e5813d9dee079e2a2fab6ab24.jpg" alt="Gambar 6"></a>
+        <a href="#!"><img src="https://i.pinimg.com/736x/17/ee/0f/17ee0f59e4e80a39fe4afe16eb96991a.jpg" alt="Gambar 7"></a>
+        <a href="#!"><img src="https://i.pinimg.com/564x/8d/87/76/8d877608d997a37796e9b3062a7ee3dc.jpg" alt="Gambar 8"></a>
+    </div>
+</body>
+</html>

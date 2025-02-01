@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center; /* Navbar berada di tengah */
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        .navbar .logo span {
+            color: orange;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .navbar .nav-links a:hover, .navbar .nav-links a.active {
+            color: orange;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .navbar .contact-button {
+            margin-left: auto;
+        }
+        .navbar .contact-button a {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .contact-button a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        /* Main Content Styling */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Project Grid Styling */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project h2 {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .project p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .project a {
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project a:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Sheyy <span>Ryll</span></div>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="profil.html">Profile</a>
+            <a href="galeri.html">Gallery</a>
+            <a href="skill.html">Skill</a>
+            <a href="projek.html">Project</a>
+        </div>
+        <div class="contact-button">
+            <a href="kontak.html">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="Screenshot 2025-02-01 051830.png" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>tic tac toe game</p>
+                
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="Screenshot 2025-02-01 052450.png" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>Crud siswa</p>
+            
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
